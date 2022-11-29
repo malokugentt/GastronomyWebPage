@@ -238,7 +238,7 @@ textarea.input {
   margin-top: 0.5rem;
 }
 
-.social-icons a {
+/* .social-icons a {
   width: 35px;
   height: 35px;
   border-radius: 5px;
@@ -248,7 +248,7 @@ textarea.input {
   line-height: 35px;
   margin-right: 0.5rem;
   transition: 0.3s;
-}
+} */
 
 .social-icons a:hover {
   transform: scale(1.05);
