@@ -275,7 +275,7 @@ textarea.input {
   bottom: 50%;
   right: 50%;
   transform: translate(-40%, 38%);
-} */
+} 
 
 .big-circle:after {
   content: "";
@@ -286,7 +286,7 @@ textarea.input {
   border-radius: 50%;
   top: calc(50% - 180px);
   left: calc(50% - 180px);
-}
+} . */
 
 .square {
   position: absolute;
@@ -465,4 +465,11 @@ ul{
   .footer-col{
     width: 100%;
 }
+}
+
+.socialimg
+{
+  height: 40px;
+  width:40px;
+
 }
