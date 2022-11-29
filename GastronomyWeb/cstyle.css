@@ -266,7 +266,7 @@ textarea.input {
   opacity: 0.3;
 }
 
-.big-circle {
+/* .big-circle {
   position: absolute;
   width: 500px;
   height: 500px;
@@ -275,7 +275,7 @@ textarea.input {
   bottom: 50%;
   right: 50%;
   transform: translate(-40%, 38%);
-}
+} */
 
 .big-circle:after {
   content: "";
