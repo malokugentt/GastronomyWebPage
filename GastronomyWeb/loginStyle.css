@@ -382,6 +382,21 @@ textarea.input {
     padding: 0.45rem 1.2rem;
   }
 }
+
+.registernow
+{
+  font-style: none;
+  color: white;
+  margin-left: 35px;
+  transition: 0.7s ease;
+}
+
+.registernow:hover
+{
+  color: #72eb3a;
+}
+
+
 /* Footer  */
 .container{
 	max-width: 1170px;
