@@ -123,6 +123,7 @@ food-menu-item{
 
 .food-title{
     font-size: 2.2rem;
+    font-family: 'Pacifico', cursive;
     padding: 10px;
     font-weight: 400;
     color: rgb(255, 255, 255);
