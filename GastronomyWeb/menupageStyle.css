@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+
+    
+    background-image: url(images/background.png);
+    
+}
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    padding: 30px 100px;
+}
+header .logo
+{
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+    
+
+}
+
+header ul
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+header ul li{
+    position: relative;
+    list-style: none;
+    margin-left: 40px;
+}
+
+header ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+}
+
+header ul li a:hover
+{
+    
+    color:#5d9d0b;;
+    transition:0.9s;
+   
+    
+   
+
+}
+
+.food-menu-container
+{
+    padding-top: 50px;
+}
+
+
+.food-menu-heading{
+    padding-top: 150px;
+    font-size:4rem;
+    text-align: center;
+    font-weight: 10;
+    color: rgb(255, 255, 255);
+    font-family:'Pacifico', cursive;
+
+}
+
+
+.food-menu-container{
+    display:inline-block;
+    flex-wrap: wrap;
+    padding-right: 20px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+
+    
+}
+
+.food-menu-container img{
+    display: block;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+food-menu-item{
+    display: flex;
+    
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+
+.food-description{
+    margin: auto 1.5rem;
+    padding: 10px;
+    color: #fff;
+}
+
+.food-title{
+    font-size: 2.2rem;
+    padding: 10px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+.food-description p{
+    font-size:1.4rem;
+    color: rgb(255, 251, 251);
+    font-weight: 500;
+    padding: 10px;
+    
+}
+
+.food-description .food-price
+{
+    color: #117964;
+    font-weight: 700;
+}
+
+
+
+.contentbox
+{
+    background: rgba(0,0,0,0.7);
+    padding-bottom: 100px;
+    border-radius: 30px;
+    display: inline-block;
+    
+    
+
+}
+ .contentbox p
+{
+    
+    padding: 20px;
+    color: white;
+    
+   
+    
+
+
+}
+
+
