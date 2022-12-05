@@ -118,7 +118,7 @@ food-menu-item{
 
 .food-description{
     margin: auto 1.5rem;
-    padding: 10px;
+    padding: none;
     color: #fff;
 }
 
@@ -134,7 +134,7 @@ food-menu-item{
     font-size:1.4rem;
     color: rgb(255, 251, 251);
     font-weight: 500;
-    padding: 10px;
+    padding: 20px;
     
 }
 
@@ -142,6 +142,21 @@ food-menu-item{
 {
     color: #117964;
     font-weight: 700;
+}
+
+.food-price
+{
+
+    margin-left: 20px;
+    font-size: 2rem;
+    position: absolute;
+    background-color: #5d9d0b;
+    border-radius: 50px;
+    
+    
+
+   
+    
 }
 
 
@@ -161,7 +176,9 @@ food-menu-item{
 {
     
     padding: 20px;
+    
     color: white;
+
     
    
     
