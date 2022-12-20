@@ -17,6 +17,7 @@ inputs.forEach((input) => {
   input.addEventListener("blur", blurFunc);
 });
 
+
         //Validimi i emrit
         var nameRegex = /^[/^[A-Z][a-zA-Z ]/;
 
@@ -32,7 +33,7 @@ inputs.forEach((input) => {
         //Validimit i password-it
         var passwordRegex = /^[A-Z].*\d{3}/;
 
-        var registerButton = document.getElementById("btn")
+        var registerButton = document.getElementById("registerbutton");
         var namemsg = document.getElementById("nameMessage");
         var surnameemsg = document.getElementById("surnameMessage");
         // var usernmaemsg = document.getElementById("usernameMessage");
@@ -52,7 +53,7 @@ inputs.forEach((input) => {
             event.preventDefault();
          }else{
             if(nameRegex.test(name)){
-                alert("Name:" + name)
+              namemsg.innerText="Nuk u plotesua me sukses";
             }else{
                 namemsg.innerText="U plotsua me sukses"
                 event.preventDefault();
