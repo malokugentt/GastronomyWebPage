@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="registerstyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="website icon" type="png" href="images/websitelogo.png">
-    <title>Log In</title>
+    <title>Register</title>
 </head>
 <body>
   <h1 class="toptitle">Join our Family!</h1>
@@ -17,20 +17,20 @@
     <img src="img/shape.png" class="square" alt="" />
     <div class="form">
       <div class="contact-info">
-        <h3 class="title">Let's get in touch</h3>
+        <h3 class="title">GRUB2GO</h3>
         <p class="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-          dolorum adipisci recusandae praesentium dicta!
+          Join our family to get exclusive news and offers in the future!
+        
         </p>
 
         <div class="info">
           <div class="information">
             <img src="images/location.png" class="icon" alt="" />
-            <p>92 Cherry Drive Uniondale, NY 11553</p>
+            <p>123 Example Road, Ex</p>
           </div>
           <div class="information">
             <img src="images/email.png" class="icon" alt="" />
-            <p>lorem@ipsum.com</p>
+            <p>grub2go@gmail.com</p>
           </div>
           <div class="information">
             <img src="images/phone.png" class="icon" alt="" />
@@ -56,45 +56,48 @@
           </div>
         </div>
       </div>
+      
+      
 
       <div class="contact-form">
         <span class="circle one"></span>
         <span class="circle two"></span>
 
-        <form action="index.html" autocomplete="off">
+        <form>
           <h3 class="title">REGISTER NOW</h3>
           <div class="input-container">
-            <input type="text" name="name" class="input" required />
+            <input type="text" name="name" class="input" id="name" required />
             <label for="">Name</label>
             <span>Name</span>
           </div>
           <div class="input-container">
-            <input type="text" name="text" class="input" required/>
+            <input type="text" name="text" class="input" id="surname" required />
             <label for="">Surname</label>
             <span>Surname</span>
           </div>
           <div class="input-container">
-            <input type="email" name="email" class="input"  required/>
+            <input type="email" name="email" class="input" id="email" required />
             <label for="">Email</label>
             <span>Email</span>
           </div>
           <div class="input-container">
-            <input type="password" name="password" class="input"  required/>
+            <input type="password" name="password" class="input" id="password" required />
             <label for="">Password</label>
             <span>Password</span>
           </div>
           <div class="input-container">
-            <input type="password" name="password" class="input"  required/>
+            <input type="password" name="password" class="input" id="password" required/>
             <label for="">Confirm Password</label>
             <span>Confirm Password</span>
           </div>
-          <input type="submit" value="Register" class="btn" />
+          <input type="submit" value="Register" onclick="validate()" class="btn" />
         </form>
       </div>
     </div>
   </div>
+  
 
-  <script src="app.js"></script>
+  
   <footer class="footer">
     <div class="container">
       <div class="row">
@@ -114,15 +117,7 @@
            
           </ul>
         </div>
-        <!-- <div class="footer-col">
-          <h4>online shop</h4>
-          <ul>
-            <li><a href="#">watch</a></li>
-            <li><a href="#">bag</a></li>
-            <li><a href="#">shoes</a></li>
-            <li><a href="#">dress</a></li>
-          </ul>
-        </div> -->
+        
         <div class="footer-col">
           <h4>follow us</h4>
           <div class="social-links">

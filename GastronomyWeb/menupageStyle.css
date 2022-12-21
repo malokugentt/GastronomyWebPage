@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
-
 *
 {
     margin: 0;
@@ -9,12 +6,41 @@
     font-family:'Poppins', sans-serif;
 }
 
+
+
 body{
 
+    background:#ff0;
+}
+
+
+
+.contentphoto
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    width:150px;
     
-    background-image: url(images/bground.png);
+    justify-content: flex-end;
+    margin-top: 10px;
     
 }
+
+header img
+{
+    margin-top: 10px;
+    padding:0;
+
+    height: 50px;
+    
+    top:0;
+    
+   
+
+}
+
 
 header
 {
@@ -25,7 +51,13 @@ header
     display: flex;
     justify-content: space-between;
     z-index: 1000;
-    padding: 30px 100px;
+    padding: 10px 100px;
+    background: rgba(0,0,0,0.5);
+    padding-top: 0;
+   
+    
+    
+    
 }
 header .logo
 {
@@ -36,10 +68,13 @@ header .logo
     text-decoration: none;
     
 
+    
+
 }
 
 header ul
 {
+    margin-top: 20px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -72,117 +107,175 @@ header ul li a:hover
 
 }
 
-.food-menu-container
+
+.banner
 {
-    padding-top: 50px;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
 }
 
-
-.food-menu-heading{
-    padding-top: 150px;
-    font-size:4rem;
-    text-align: center;
-    font-weight: 10;
-    color: rgb(255, 255, 255);
-    font-family:'Pacifico', cursive;
-
-}
-
-
-.food-menu-container{
-    display:inline-block;
-    flex-wrap: wrap;
-    padding-right: 20px;
-    padding-left: 50px;
-    padding-bottom: 10px;
-
-    
-}
-
-.food-menu-container img{
-    display: block;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center;
-    
-}
-
-food-menu-item{
-    display: flex;
-    
-    justify-content: space-evenly;
-    margin-bottom: 3rem;
-}
-
-.food-description{
-    margin: auto 1.5rem;
-    padding: none;
-    color: #fff;
-}
-
-.food-title{
-    font-size: 2.2rem;
-    font-family: 'Pacifico', cursive;
-    padding: 10px;
-    font-weight: 400;
-    color: rgb(255, 255, 255);
-}
-
-.food-description p{
-    font-size:1.4rem;
-    color: rgb(255, 251, 251);
-    font-weight: 500;
-    padding: 20px;
-    
-}
-
-.food-description .food-price
+.banner .imageBox
 {
-    color: #117964;
-    font-weight: 700;
-}
-
-.food-price
-{
-
-    margin-left: 20px;
-    font-size: 2rem;
     position: absolute;
-    background-color: #5d9d0b;
-    border-radius: 50px;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
-   
-    
+
 }
 
-
-
-.contentbox
+.banner .imageBox img
 {
-    background: rgba(0,0,0,0.7);
-    padding-bottom: 100px;
-    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: 0.5s;
+    background-position: center;
+
+}
+.banner .imageBox img.active
+{
+    opacity: 1;
+}
+
+.controls
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 80px;
+}
+
+.controls li
+{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s ease;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.controls li:hover
+{
+    background: transparent;
+}
+.controls li:before
+{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-left: 3px solid #111;
+    border-bottom: 3px solid #111;
+    transform: rotate(45deg);
+}
+.controls li:nth-child(2):before
+{
+    transform: rotate(225deg);
+}
+
+.contentBox
+{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+.contentBox div
+{
+    display:none;
+
+}
+
+.contentBox div.active
+{
+    display: block;
+    padding:30px;
+    padding-left: 30px;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    
+    
+   
+
+}
+
+.contentBox div h2
+{
+    color: #fff;
+    font-size: 2em;
+    margin-left: 200px;
+
+}
+
+.contentBox div p
+{
+    color: #fff;
+    font-size: 1.1em;
+    margin-left: 200px;
+
+}
+
+.contentBox div a
+{
+    color: #111;
+    font-size: 1.1em;
     display: inline-block;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 10px 30px;
+    background:#fff ;
+    margin-top: 10px;
+    font-weight: 250;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-left: 200px;
     
-    
+
+
 
 }
- .contentbox p
+.contentBox a:hover
 {
+    box-shadow: #32325d40 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(255, 255, 255, 0.82) 0px 3px 8px;
     
-    padding: 20px;
+    transition:0.4s ease-in-out;
     
-    color: white;
 
-    
+
+
+}
+.contentBox a:hover::after
+{
+    box-shadow:none;
+    transition: 1s ease-out;
    
     
 
 
+
 }
 
+.contentBox a
+{
+    border-radius: 30px;
+    
+    transition: all .3s ease;
+    
 
+}
