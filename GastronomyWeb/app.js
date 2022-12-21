@@ -1,3 +1,6 @@
+/* Gastronomy Webpage
+Authors: Elird Elshani & Gent Maloku
+GPZa */
 const inputs = document.querySelectorAll(".input");
 
 function focusFunc() {

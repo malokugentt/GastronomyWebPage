@@ -1,3 +1,6 @@
+/* Gastronomy Webpage
+Authors: Elird Elshani & Gent Maloku
+GPZa */
 *
 {
     margin: 0;
@@ -5,14 +8,10 @@
     box-sizing:border-box;
     font-family:'Poppins', sans-serif;
 }
-
-
-
 body{
 
     background:#ff0;
 }
-
 header
 {
     position: fixed;
@@ -33,22 +32,18 @@ header img
    
 
 }
-
 header ul
 {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 header ul li{
     position: relative;
     list-style: none;
     margin-left: 40px;
 }
-
 header ul li a
 {
     color: #fff;
@@ -56,26 +51,17 @@ header ul li a
     transition: all 0.3s ease;
 
 }
-
 header ul li a:hover
 {
-    
     color:#5d9d0b;;
     transition:0.9s;
-   
-    
-   
-
 }
-
-
 .banner
 {
     position: relative;
     width: 100%;
     min-height: 100vh;
 }
-
 .banner .imageBox
 {
     position: absolute;
@@ -83,10 +69,7 @@ header ul li a:hover
     left: 0;
     width: 100%;
     height: 100%;
-
-
 }
-
 .banner .imageBox img
 {
     position: absolute;
@@ -98,13 +81,11 @@ header ul li a:hover
     opacity: 0;
     transition: 0.5s;
     background-position: center;
-
 }
 .banner .imageBox img.active
 {
     opacity: 1;
 }
-
 .controls
 {
     position: absolute;
@@ -112,9 +93,7 @@ header ul li a:hover
     transform: translateY(-50%);
     right: 0;
     width: 80px;
-    
 }
-
 .controls li
 {
     position: relative;
@@ -129,7 +108,6 @@ header ul li a:hover
     transition: 0.5s ease;
     margin-bottom: 10px;
     border-radius: 20px;
-    
 }
 .controls li:hover
 {
@@ -149,7 +127,6 @@ header ul li a:hover
 {
     transform: rotate(225deg);
 }
-
 .contentBox
 {
     position: absolute;
@@ -162,7 +139,6 @@ header ul li a:hover
     display:none;
 
 }
-
 .contentBox div.active
 {
     display: block;
@@ -170,25 +146,17 @@ header ul li a:hover
     padding-left: 30px;
     background: rgba(0,0,0,0.5);
     border-radius:30px ;
-    
-   
-
 }
-
 .contentBox div h2
 {
     color: #fff;
     font-size: 2em;
-
 }
-
 .contentBox div p
 {
     color: #fff;
     font-size: 1.1em;
-
 }
-
 .contentBox div a
 {
     color: #111;
@@ -201,40 +169,20 @@ header ul li a:hover
     text-decoration: none;
     letter-spacing: 2px;
     text-transform: uppercase;
-    
-
-
-
 }
 .contentBox a:hover
 {
     box-shadow: #32325d40 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    box-shadow: rgba(255, 255, 255, 0.82) 0px 3px 8px;
-    
+    box-shadow: rgba(255, 255, 255, 0.82) 0px 3px 8px;  
     transition:0.4s ease-in-out;
-    
-
-
-
 }
 .contentBox a:hover::after
 {
     box-shadow:none;
     transition: 1s ease-out;
-   
-    
-
-
-
 }
-
 .contentBox a
 {
     border-radius: 30px;
-    
     transition: all .3s ease;
-    
-
 }
-
-
