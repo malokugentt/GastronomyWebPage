@@ -59,21 +59,21 @@ GPZa -->
         <form action="index.html" autocomplete="off">
           <h3 class="title">LOG IN</h3>
           <div class="input-container">
-            <input type="text" name="name" class="input" required />
+            <input type="text" name="username" class="input" id="username" />
             <label for="">Username</label>
             <span>Username</span>
           </div>
           <div class="input-container">
-            <input type="email" name="email" class="input" required/>
+            <input type="email" name="email" class="input" id="email"/>
             <label for="">Email</label>
             <span>Email</span>
           </div>
           <div class="input-container">
-            <input type="password" name="password" class="input"  required/>
+            <input type="password" name="password" class="input"  id="password"/>
             <label for="">Password</label>
             <span>Password</span>
           </div>
-          <input type="submit" value="Log In" class="btn" />
+          <input type="submit" id="loginbtn" value="LogIn" onclick="validate()" class="btn" />
         </form>
         <a href="register.html" class="registernow">Don't have an account? Register Now</a>
       </div>
