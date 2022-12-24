@@ -19,23 +19,48 @@ inputs.forEach((input) => {
   input.addEventListener("focus", focusFunc);
   input.addEventListener("blur", blurFunc);
 });
+
+const form = document.getElementById("form");
+
+
+form.addEventListener('submit', e => {
+	e.preventDefault();
+	
+	validate();
+});
+
+
 function validate(){
   var username = document.getElementById("username").value;
   var email = document.getElementById("email").value;
   var password = document.getElementById("password").value;
+  var inner = document.getElementById("alert1");
+  var inner1 = document.getElementById("alert2");
+  var inner3 = document.getElementById("alert3");
+  
  
   //Validimi i username-it
-  if(!username.match(/^username.length < 8 || username.length > 15/)){
-    alert("Username duhet te jete ma i gjate se 8 e me i shkurt se 15 karaktere");
+  if(!username.match(/^[a-zA-Z\-]+$/)){
+    //alert("Username should only contain characters!");
+    inner.innerText = 'Username should only contain characters!';
   }
+  
 
   // Validimi i email-it
   if (!email.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/)) {
-    alert("Email-i duhet të jete standart!");
+    inner1.innerText = 'Please type in a functional email!';
   }
+ 
+
   //Validimi i Password-it
   if(!password.match(/^[A-Z].*[0-9]{3}$/)){
-      alert("Passwordi duhet te filloj me shkronje te madhe dhe duhet te perfundoj me 3 numra.")
+      inner3.innerText = 'Password should start with an uppercase letter and end with 3 numbers!';
 
     }
+
+   else
+   {
+    document.form.submit();
+   }
+    
 }

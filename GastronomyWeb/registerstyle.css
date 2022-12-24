@@ -311,6 +311,15 @@ textarea.input {
   }
 }
 
+.alert
+{
+  color: red;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+
+
 /* Footer  */
 .container{
 	max-width: 1170px;

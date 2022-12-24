@@ -24,15 +24,17 @@ GPZa -->
     <div class="title">
       ORDER NOW
     </div>
-    <div class="form">
+    <form id="form" name="form" class="form">
        <div class="inputfield">
           <label>First Name</label>
-          <input type="text" class="input" required>
-       </div>  
+          <input type="text" class="input" id="name" >
+       </div>
+       <p id="alert1" class="alert"></p>  
         <div class="inputfield">
           <label>Last Name</label>
-          <input type="text" class="input" required>
+          <input type="text" class="input" id="surname" >
        </div>  
+       <p id="alert2" class="alert"></p>  
         <div class="inputfield">
           <label>City</label>
           <div class="custom_select">
@@ -44,21 +46,23 @@ GPZa -->
               <option value="City">Gjilan</option>
               <option value="City">Ferizaj</option>
               <option value="City">Mitrovice</option>
-            </select>
+            </select required>
           </div>
        </div> 
       <div class="inputfield">
           <label>Phone Number</label>
-          <input type="text" class="input" required>
+          <input type="text" class="input" id="phone" >
        </div> 
+       <p id="alert3" class="alert"></p>  
       <div class="inputfield">
           <label>Order Description</label>
-          <textarea class="textarea" required></textarea>
+          <textarea class="textarea" id="desc" ></textarea>
        </div> 
+       <p id="alert4" class="alert"></p>  
       <div class="inputfield">
-        <input type="submit" value="Order Now" class="btn" ><a></a>
+        <input type="submit" value="Order Now" onclick="return validate()" class="btn" ><a></a>
       </div>
-    </div>
+    </form>
 </div>	
 	<script src="app.js"></script>
     <!--Footer-->

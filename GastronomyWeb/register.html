@@ -56,34 +56,35 @@ GPZa -->
       <div class="contact-form">
         <span class="circle one"></span>
         <span class="circle two"></span>
-        <form>
+        <form name="form" id="form" autocomplete="off">
           <h3 class="title">REGISTER NOW</h3>
           <div class="input-container">
             <input type="text" name="name" class="input" id="name"  />
             <label for="">Name</label>
             <span>Name</span>
           </div>
+          <p id="alert1" class="alert"></p>
           <div class="input-container">
             <input type="text" name="text" class="input" id="surname"  />
             <label for="">Surname</label>
             <span>Surname</span>
           </div>
+          <p id="alert2" class="alert"></p>
           <div class="input-container">
             <input type="email" name="email" class="input" id="email"  />
             <label for="">Email</label>
             <span>Email</span>
           </div>
+          <p id="alert3" class="alert"></p>
           <div class="input-container">
             <input type="password" name="password" class="input" id="password"  />
             <label for="">Password</label>
             <span>Password</span>
           </div>
-          <div class="input-container">
-            <input type="password" name="password" class="input" id="confirmpassword" />
-            <label for="">Confirm Password</label>
-            <span>Confirm Password</span>
-          </div>
-          <input type="submit" id="registerbtn" value="Register" onclick="validate()"  class="btn" />
+          <p id="alert4" class="alert"></p>
+          
+          <p id="alert5" class="alert"></p>
+          <input type="submit" id="registerbtn" value="Register" onclick=" return validate()"  class="btn" />
         </form>
       </div>
     </div>

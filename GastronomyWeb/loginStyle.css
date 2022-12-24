@@ -506,3 +506,10 @@ ul{
   width:40px;
 
 }
+
+.alert
+{
+  color: red;
+  font-size: 13px;
+  margin-bottom: 10px;
+}

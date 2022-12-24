@@ -22,36 +22,62 @@ inputs.forEach((input) => {
 
 
 
+form.addEventListener('submit', e => {
+	e.preventDefault();
+	
+	validate();
+});
+
+
 function validate(){
-  // Marrim vlerat e inputit nga forma
   var name = document.getElementById("name").value;
   var surname = document.getElementById("surname").value;
   var email = document.getElementById("email").value;
   var password = document.getElementById("password").value;
-  var confirmpassword = document.getElementById("confirmpassword").value;
+  
+ 
+  var inner = document.getElementById("alert1");
+  var inner1 = document.getElementById("alert2");
+  var inner3 = document.getElementById("alert3");
+  var inner4 = document.getElementById("alert4");
+  
+  
+  
+ 
+  //Validimi i username-it
+  if(!name.match(/^[a-zA-Z\-]+$/)){
+    //alert("Username should only contain characters!");
+    inner.innerText = 'Username should only contain characters!';
+  }
+  
 
-  // Validimi i emrit
-  if (!name.match(/^[A-Z][a-z]+$/)) {
-    alert("Emri duhet të filloj me shkronjë të madhe dhe të përmbajë vetëm tekst!");
-    return false;
+  if(!surname.match(/^[a-zA-Z\-]+$/)){
+    //alert("Username should only contain characters!");
+    inner1.innerText = 'Username should only contain characters!';
   }
-  //Validimi i mbiemrit
-  if (!surname.match(/^[A-Z][a-z]+$/)) {
-    alert("Mbiemri duhet të filloj me shkronjë të madhe dhe të përmbajë vetëm tekst!");
-    return false;
-  }
+  
+
   // Validimi i email-it
   if (!email.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/)) {
-    alert("Email-i duhet të jete standart!");
+    inner3.innerText = 'Please type in a functional email!';
   }
+ 
+
   //Validimi i Password-it
   if(!password.match(/^[A-Z].*[0-9]{3}$/)){
-      alert("Passwordi duhet te filloj me shkronje te madhe dhe duhet te perfundoj me 3 numra.")
-  }
-  if(!confirmpassword.match(/^[A-Z].*[0-9]{3}$/)){
-    alert("Passwordi duhet te filloj me shkronje te madhe dhe duhet te perfundoj me 3 numra.")
-  }
+      inner4.innerText = 'Password should start with an uppercase letter and end with 3 numbers!';
 
-  };
- 
+    }
+
+   
+
+
+   
+   else
+   {
+    document.form.submit();
+   }
+   
+    
+}
   
