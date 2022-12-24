@@ -47,13 +47,13 @@ function validate(){
   //Validimi i username-it
   if(!name.match(/^[a-zA-Z\-]+$/)){
     //alert("Username should only contain characters!");
-    inner.innerText = 'Username should only contain characters!';
+    inner.innerText = 'Name should only contain characters!';
   }
   
 
   if(!surname.match(/^[a-zA-Z\-]+$/)){
     //alert("Username should only contain characters!");
-    inner1.innerText = 'Username should only contain characters!';
+    inner1.innerText = 'Surname should only contain characters!';
   }
   
 

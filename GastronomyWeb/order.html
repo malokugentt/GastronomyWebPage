@@ -20,25 +20,33 @@ GPZa -->
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+ 
+  <h1 class="header">Food is minutes away!</h1>
 <div class="wrapper">
     <div class="title">
       ORDER NOW
-    </div>
+    </div >
     <form id="form" name="form" class="form">
        <div class="inputfield">
           <label>First Name</label>
-          <input type="text" class="input" id="name" >
+          <input type="text" class="input" id="name" placeholder="ex. John" >
        </div>
        <p id="alert1" class="alert"></p>  
         <div class="inputfield">
           <label>Last Name</label>
-          <input type="text" class="input" id="surname" >
+          <input type="text" class="input" id="surname" placeholder="ex. Doe" >
        </div>  
-       <p id="alert2" class="alert"></p>  
+       <p id="alert2" class="alert"></p>
+       <div class="inputfield">
+        <label>Address</label>
+        <input type="text" class="input" id="address" placeholder="ex.  King Hill Road" >
+     </div>
+     <p id="alert4" class="alert"></p>  
+         
         <div class="inputfield">
           <label>City</label>
           <div class="custom_select">
-            <select>
+            <select class="select">
               <option value="City">Prizren</option>
               <option value="City">Prishtine</option>
               <option value="City">Peje</option>
@@ -51,16 +59,16 @@ GPZa -->
        </div> 
       <div class="inputfield">
           <label>Phone Number</label>
-          <input type="text" class="input" id="phone" >
+          <input type="text" class="input" id="phone" placeholder="ex. 38344123123">
        </div> 
        <p id="alert3" class="alert"></p>  
       <div class="inputfield">
           <label>Order Description</label>
-          <textarea class="textarea" id="desc" ></textarea>
+          <textarea class="textarea" id="desc" placeholder="ex. Two Chicken Salads" ></textarea>
        </div> 
        <p id="alert4" class="alert"></p>  
       <div class="inputfield">
-        <input type="submit" value="Order Now" onclick="return validate()" class="btn" ><a></a>
+        <input type="submit" value="ORDER NOW" onclick="return validate()" class="btn" ><a></a>
       </div>
     </form>
 </div>	
