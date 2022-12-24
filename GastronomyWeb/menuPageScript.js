@@ -1,3 +1,6 @@
+/* Gastronomy Webpage
+Authors: Elird Elshani & Gent Maloku
+GPZa */
 const imageBox = document.querySelector('.imageBox');
 const slides = imageBox.getElementsByTagName('img');
  var i = 0;
