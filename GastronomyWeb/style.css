@@ -29,20 +29,29 @@ header img
     position: relative;
     height: 170px;
     top:0;
+    padding-right: 300px;
    
 
 }
 header ul
 {
+    padding-top: 10vh;
     position: relative;
-    display: flex;
-    justify-content: center;
+    display:flex;
+    justify-content: flex-end;
     align-items: center;
+    width: 50%;
+    height: 100%;
+    padding-right: 3vh;
+    
+    
 }
 header ul li{
     position: relative;
     list-style: none;
     margin-left: 40px;
+    font-size: 2vh;
+    
 }
 header ul li a
 {
@@ -131,8 +140,10 @@ header ul li a:hover
 {
     position: absolute;
     bottom: 0;
-    max-width: 700px;
-    padding: 100px;
+    left: 0;
+    max-width: 100vh;
+    padding: 8vh;
+    display: flex;
 }
 .contentBox div
 {
@@ -142,27 +153,27 @@ header ul li a:hover
 .contentBox div.active
 {
     display: block;
-    padding:30px;
-    padding-left: 30px;
+    padding:5vh;
+    padding-left: 5vh;
     background: rgba(0,0,0,0.5);
-    border-radius:30px ;
+    border-radius:5vh ;
 }
 .contentBox div h2
 {
     color: #fff;
-    font-size: 2em;
+    font-size: 4vh;
 }
 .contentBox div p
 {
     color: #fff;
-    font-size: 1.1em;
+    font-size: 2vh;
 }
 .contentBox div a
 {
     color: #111;
-    font-size: 1.1em;
+    font-size: 2vh;
     display: inline-block;
-    padding: 10px 30px;
+    padding: 1.5vh 4.5vh;
     background:#fff ;
     margin-top: 10px;
     font-weight: 250;
@@ -186,3 +197,7 @@ header ul li a:hover
     border-radius: 30px;
     transition: all .3s ease;
 }
+
+
+
+
