@@ -18,9 +18,11 @@ body{
     display: flex;
     flex-direction: column;
     top: 0;
-    width:150px;   
+    width:24vh;   
     justify-content: flex-end;
-    margin-top: 10px;
+    margin-top: 2vh;
+    z-index: 0;
+    
 }
 header img
 {
@@ -57,6 +59,7 @@ header ul
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 header ul li{
     position: relative;
@@ -77,7 +80,7 @@ header ul li a:hover
 }
 .banner
 {
-    position: relative;
+    position: fixed;
     width: 100%;
     min-height: 100vh;
 }
@@ -152,7 +155,7 @@ header ul li a:hover
     flex-direction: column;
     position: absolute;
     bottom: 0;
-    width: 100%;   
+    width: 100%;  
 }
 .contentBox div
 {
@@ -168,29 +171,33 @@ header ul li a:hover
 }
 .contentBox div h2
 {
+    width: 20%;
     color: #fff;
-    font-size: 2em;
-    margin-left: 200px;
+    font-size: 3.5vh;
+    margin-left: 30vh;
+    z-index: 50;
+    
 }
 .contentBox div p
 {
     color: #fff;
-    font-size: 1.1em;
-    margin-left: 200px;
+    font-size: 3vh;
+    margin-left: 30vh;
 }
 .contentBox div a
 {
     color: #111;
-    font-size: 1.1em;
+    font-size: 3vh;
     display: inline-block;
     padding: 10px 30px;
     background:#fff ;
-    margin-top: 10px;
+    margin-top: 3vh;
     font-weight: 250;
     text-decoration: none;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-left: 200px;
+    margin-left: 30vh;
+
 }
 .contentBox a:hover
 {
