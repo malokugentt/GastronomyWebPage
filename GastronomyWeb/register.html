@@ -56,20 +56,26 @@ GPZa -->
       <div class="contact-form">
         <span class="circle one"></span>
         <span class="circle two"></span>
-        <form name="form" id="form" autocomplete="off">
+        <form name="form" id="form"  autocomplete="off" action="registerConnect.php" method="post">
           <h3 class="title">REGISTER NOW</h3>
           <div class="input-container">
-            <input type="text" name="name" class="input" id="name"  />
+            <input type="text" name="name" class="input" id="name"   />
             <label for="">Name</label>
             <span>Name</span>
           </div>
           <p id="alert1" class="alert"></p>
           <div class="input-container">
-            <input type="text" name="text" class="input" id="surname"  />
+            <input type="text" name="surname" class="input" id="surname"   />
             <label for="">Surname</label>
             <span>Surname</span>
           </div>
           <p id="alert2" class="alert"></p>
+          <div class="input-container">
+            <input type="text" name="username" class="input" id="username"   />
+            <label for="">Username</label>
+            <span>Username</span>
+          </div>
+          <p id="alertPw" class="alert"></p>
           <div class="input-container">
             <input type="email" name="email" class="input" id="email"  />
             <label for="">Email</label>
@@ -84,7 +90,7 @@ GPZa -->
           <p id="alert4" class="alert"></p>
           
           <p id="alert5" class="alert"></p>
-          <input type="submit" id="registerbtn" value="Register" onclick=" return validate()"  class="btn" />
+          <input type="submit" value="Register" name="registerbtn" id="registerbtn"  onclick=" return validate()"  class="btn" />
         </form>
       </div>
     </div>
@@ -102,8 +108,8 @@ GPZa -->
         <div class="footer-col">
           <h4>get help</h4>
           <ul>
-            <li><a href="index.html">Return to Home Page</a></li>
-            <li><a href="order.html">Order Food</a></li>
+            <li><a href="index.php">Return to Home Page</a></li>
+            
           </ul>
         </div>
         <div class="footer-col">

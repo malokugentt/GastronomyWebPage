@@ -34,12 +34,14 @@ function validate(){
   var surname = document.getElementById("surname").value;
   var email = document.getElementById("email").value;
   var password = document.getElementById("password").value;
+  var username = document.getElementById("username").value;
   
  
   var inner = document.getElementById("alert1");
   var inner1 = document.getElementById("alert2");
   var inner3 = document.getElementById("alert3");
   var inner4 = document.getElementById("alert4");
+  var innerPw = document.getElementById("alertPw");
   
   
   
@@ -68,6 +70,11 @@ function validate(){
       inner4.innerText = 'Password should start with an uppercase letter and end with 3 numbers!';
 
     }
+
+  if(!username.match(/^[a-zA-Z0-9_]+$/))
+  {
+    innerPw.innerText= 'Username can only contain characters,numbers and underscores!';
+  }
 
    
 
