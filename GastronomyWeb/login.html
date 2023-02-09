@@ -56,24 +56,24 @@ GPZa -->
       <div class="contact-form">
         <span class="circle one"></span>
         <span class="circle two"></span>
-        <form name="form" id="form" autocomplete="off">
+        <form name="form" id="form" autocomplete="off" action="loginConnect.php" method="post">
           <h3 class="title">LOG IN</h3>
           <div class="input-container">
-            <input type="text" class="input" id="username" />
-            <label for="">Username</label>
+            <input type="text" class="input" id="username" name="username" />
+            <label for="username">Username</label>
             <span>Username</span>
           </div>
           <p class="alert" id="alert1"></p>
           <div class="input-container">
-            <input type="email"  class="input" id="email"/>
-            <label for="">Email</label>
+            <input type="email"  class="input" id="email" name="email"/>
+            <label for="email">Email</label>
             <span>Email</span>
           </div>
 
          <p class="alert" id="alert2"></p>
           <div class="input-container">
-            <input type="password"  class="input"  id="password"/>
-            <label for="">Password</label>
+            <input type="password"  class="input"  id="password" name="password"/>
+            <label for="password">Password</label>
             <span>Password</span>
           </div>
           <p id="alert3" class="alert"></p>
@@ -97,8 +97,8 @@ GPZa -->
         <div class="footer-col">
           <h4>get help</h4>
           <ul>
-            <li><a href="index.html">Return to Home Page</a></li>
-            <li><a href="order.html">Order Food</a></li>
+            <li><a href="index.php">Return to Home Page</a></li>
+            
           </ul>
         </div>
         <div class="footer-col">
