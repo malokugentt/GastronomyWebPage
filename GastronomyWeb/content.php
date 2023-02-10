@@ -15,7 +15,7 @@ $sql = "SELECT * FROM content";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-    // output data of each row
+    // output data of each rowsss
     while($row = $result->fetch_assoc()) {
         echo "<div class=\"".$row["class"]."\">";
         echo "<h2>" . $row["title"] . "</h2>";
