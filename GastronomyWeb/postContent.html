@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+        * {
+          font-family: 'Poppins', sans-serif;
+        }
+        body {
+          background-color: ghostwhite;
+        }
+        form {
+          margin: 0 auto;
+          text-align: center;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        label {
+          display: inline-block;
+          width: 150px;
+          text-align: right;
+          padding-right: 10px;
+          font-weight: bold;
+        }
+        input[type="text"],
+        textarea {
+          width: 100%;
+          height: 35px;
+          padding: 5px;
+          font-size: 16px;
+          border-radius: 5px;
+          border: 0;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        textarea {
+          height: 150px;
+        }
+        input[type="submit"] {
+          width: 150px;
+          height: 40px;
+          margin-top: 20px;
+          background-color: #3e8e41;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: 0.2s ease-in-out;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        form {
+          background: #4CAF50;
+          padding: 50px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border-radius: 40px;
+        }
+        form label {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding-right: 150px;
+          padding-bottom: 10px;
+          color: #ffff;
+        }
+        h1 {
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          color: ghostwhite;
+          padding-bottom: 10px;
+        }
+        input[type="submit"]:hover {
+          background-color: #72eb3a;
+        }
+        @media (min-width: 500px) {
+          form {
+            width: 500px;
+          }
+        }
+      </style>
+    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<form action="postContent.php" method="post">
+    <h1>Create a Post:</h1>
+  <div>
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title">
+  </div>
+  <div>
+    <label for="description">Description:</label>
+    <textarea id="description" name="description"></textarea>
+  </div>
+  <div>
+    <label for="button_text">Button Text:</label>
+    <input type="text" id="button_text" name="button_text">
+  </div>
+  <div>
+    <label for="button_link">Button Link:</label>
+    <input type="text" id="button_link" name="button_link">
+  </div>
+  <div>
+    <label for="class">Class:</label>
+    <input type="text" id="class" name="class">
+  </div>
+  <div>
+    <label for="author">Author:</label>
+    <input type="text" id="author" name="author">
+  </div>
+  <input type="submit" value="Submit" name="submit">
+
+</form>
+
+  
+</body>
+</html>

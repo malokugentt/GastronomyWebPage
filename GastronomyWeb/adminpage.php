@@ -43,6 +43,7 @@ $adminName = $_SESSION['username'];
      
       <a href="view/dashboard.php" class="btn">Users</a>
       <a href="ordersTable.php" class="btn">Orders</a>
+      <a href="postContent.html" class="btn">Post Content</a>
       <a href="?logout=1" class="btn">logout</a>
    </div>
 
