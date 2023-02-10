@@ -20,6 +20,7 @@ if ($result->num_rows > 0) {
         echo "<div class=\"".$row["class"]."\">";
         echo "<h2>" . $row["title"] . "</h2>";
         echo "<p>" . $row["description"] . "</p>";
+        echo "<p>Posted by: " . $row["author"] . "</p>";
         echo "<a href=".$row["button_link"]. ">" . $row["button_text"] . "</a>";
         echo "</div>";
     }
