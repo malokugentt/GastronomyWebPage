@@ -78,7 +78,8 @@ class Login {
             }
         } else {
             // Redirect to the error page
-            header("Location: register.html");
+            echo "<script type='text/javascript'>alert('Username, Email or Password incorrect!');</script>";
+            header('Refresh: 0; URL=login.html');
             exit;
         }
         
