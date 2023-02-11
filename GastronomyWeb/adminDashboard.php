@@ -1,3 +1,6 @@
+<!-- Gastronomy WebPage
+Authors: Elird Elshani & Gent Maloku
+GPZa -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,7 +23,7 @@
   <h1>Admin Dashboard</h1>
   <table>
     <tr>
-     
+    
     </tr>
     <?php
       class Database

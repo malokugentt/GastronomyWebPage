@@ -1,23 +1,21 @@
+<!-- Gastronomy WebPage
+Authors: Elird Elshani & Gent Maloku
+GPZa -->
 <?php
-// Connect to the database
+
 $db = mysqli_connect('localhost','root','','testGastronomy');
 
-// Check connection
 if (!$db) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-// If the form is submitted
-if (isset($_POST['submit'])) {
 
-   
+if (isset($_POST['submit'])) {
   
     $image_link = $_POST['image_link'];
     $class = $_POST['class'];
 
-   
-
-    // Insert the image link into the images table
+    
     $sql = "INSERT INTO images (image_link,class)
             VALUES ('$image_link','$class')";
 
@@ -28,7 +26,6 @@ if (isset($_POST['submit'])) {
         echo "Error: " . $sql . "<br>" . mysqli_error($db);
     }
 
-    // Close the connection
     mysqli_close($db);
 }
 ?>

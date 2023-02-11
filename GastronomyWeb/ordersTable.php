@@ -1,3 +1,6 @@
+<!-- Gastronomy WebPage
+Authors: Elird Elshani & Gent Maloku
+GPZa -->
 <html>
 <head></head>
 <body>
@@ -14,7 +17,7 @@ class OrdersTable {
         $password = "";
         $dbname = "testGastronomy";
 
-        // Connect to the database
+        
         $this->conn = new mysqli($servername, $username, $password, $dbname);
 
         if ($this->conn->connect_error) {
@@ -25,7 +28,7 @@ class OrdersTable {
     
 
     public function generateTable() {
-        // Fetch data from the orders table
+        
         $sql = "SELECT * FROM orders";
         $result = $this->conn->query($sql);
         echo " <div class=\"maintable\">";
@@ -61,7 +64,7 @@ class OrdersTable {
     }
 
     public function __destruct() {
-        // Close the database connection
+        
         $this->conn->close();
     }
 }
@@ -71,11 +74,6 @@ $ordersTable->generateTable();
 ?>
 
 </html>
-
-
-
-
-
 <style>
     @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
@@ -84,8 +82,6 @@ $ordersTable->generateTable();
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    
-    
 
 }
 
@@ -97,8 +93,7 @@ header {
   
 }
 
- h1
-{
+ h1{
     
     text-align: center;
     color: #f2f2f2;
@@ -106,21 +101,16 @@ header {
 }
 
 
-body
-{
+body{
    background-color:#dddddd;
 }
 
- table {
+table {
 
 margin: 0 auto;
 width: 80%;
 height: 500px;
 padding: 0 auto;
-
-
-
-
  
 }
 
@@ -151,8 +141,7 @@ transition: 0.2s ease-in-out;
 box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.maintable
-{
+.maintable{
     margin: 80px;
     margin-top: 50px;
     background-color: ghostwhite;
@@ -160,14 +149,9 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     align-items: center;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px inset, rgba(0, 0, 0, 0.09) 0px -3px 5px inset;
-
-    
-    
-   
 }
 
-h1
-{
+h1{
     font-family: 'Poppins',sans-serif;
     color: lightslategray;
     text-align: left;
@@ -176,14 +160,11 @@ h1
     margin-top: 10px;
 }
 
-.backbtn
-{
+.backbtn{
     margin-left: 120px;
    margin-bottom: 30px;
    margin-bottom: 20px;
 }
-
-
 
 a:hover {
 background-color: #72eb3a;
@@ -205,6 +186,5 @@ background-color: #72eb3a;
       background-color: #f2f2f2;
    }
 }
-
 </style>
 

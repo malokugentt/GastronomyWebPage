@@ -1,10 +1,13 @@
+<!-- Gastronomy WebPage
+Authors: Elird Elshani & Gent Maloku
+GPZa -->
 <?php
 
 class FormHandler {
     private $conn;
 
     public function __construct() {
-        // Connect to the database
+        
         $servername = "localhost";
         $username = "root";
         $password = "";

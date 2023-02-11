@@ -1,3 +1,6 @@
+<!-- Gastronomy WebPage
+Authors: Elird Elshani & Gent Maloku
+GPZa -->
 <?php
 include_once '../repository/userRepository.php';
 
@@ -6,9 +9,6 @@ $userId = $_GET['id'];
 $userRepository = new UserRepository();
 
 $user = $userRepository->getUserById($userId);
-
-
-
 
 ?>
 

@@ -1,3 +1,6 @@
+<!-- Gastronomy WebPage
+Authors: Elird Elshani & Gent Maloku
+GPZa -->
 <?php
 
 class FormHandler {
@@ -46,7 +49,7 @@ class FormHandler {
     }
 
     public function __destruct() {
-        // Close the database connection
+        
         $this->conn->close();
     }
 }

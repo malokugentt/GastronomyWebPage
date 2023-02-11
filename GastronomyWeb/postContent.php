@@ -1,16 +1,18 @@
+<!-- Gastronomy WebPage
+Authors: Elird Elshani & Gent Maloku
+GPZa -->
 <?php
-// Connect to the database
+
 $db = mysqli_connect('localhost','root','','testGastronomy');
 
-// Check connection
+
 if (!$db) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-// If the form is submitted
 if (isset($_POST['submit'])) {
 
-    // Get the form data
+    
     $title = $_POST['title'];
     $description = $_POST['description'];
     $button_text = $_POST['button_text'];
@@ -19,7 +21,7 @@ if (isset($_POST['submit'])) {
     $author = $_POST['author'];
   
 
-    // Insert the data into the content table
+    
     $sql = "INSERT INTO content (title, description, button_text, button_link, class, author)
             VALUES ('$title', '$description', '$button_text', '$button_link', '$class', '$author')";
 
@@ -29,9 +31,6 @@ if (isset($_POST['submit'])) {
         echo "Error: " . $sql . "<br>" . mysqli_error($db);
     }
 
-    
-
-    // Close the connection
     mysqli_close($db);
 }
 ?>

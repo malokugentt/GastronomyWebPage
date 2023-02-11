@@ -16,7 +16,6 @@ GPZa -->
             <li><a href="menupage.html">Menu</a></li>
             <li><a href="login.html">Log In</a></li>
             <li><a href="register.html">Register</a></li>
-            
         </ul>
     </header>
     <section class="banner">

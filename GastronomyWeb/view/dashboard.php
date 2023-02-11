@@ -1,3 +1,6 @@
+<!-- Gastronomy WebPage
+Authors: Elird Elshani & Gent Maloku
+GPZa -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,15 +13,12 @@
     margin: 0;
     padding: 0;
     
-    
-
 }
 
 header {
-
     background-color: #6d9d0b;
-  width: 100%;
-  padding: 10px;
+    width: 100%;
+    padding: 10px;
   
 }
 
@@ -36,16 +36,12 @@ body
    background-color:#dddddd;
 }
 
- table {
+table {
 
 margin: 0 auto;
 width: 80%;
 height: 500px;
 padding: 0 auto;
-
-
-
-
  
 }
 
@@ -76,8 +72,7 @@ transition: 0.2s ease-in-out;
 box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.maintable
-{
+.maintable{
     margin: 80px;
     margin-top: 50px;
     background-color: ghostwhite;
@@ -86,9 +81,6 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px inset, rgba(0, 0, 0, 0.09) 0px -3px 5px inset;
 
-    
-    
-   
 }
 
 h1
@@ -132,20 +124,12 @@ background-color: #72eb3a;
 }
 
 </style>
-
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-
-
-   
- 
-         
-    
 
 <div class="maintable">
 <a href="/GastronomyWeb/adminpage.php" class="backbtn">Return to Admin Page</a>
@@ -157,8 +141,7 @@ background-color: #72eb3a;
             <th>Name</th>
             <th>Surname</th>
             <th>Email</th>
-            <th>Username</th>
-           
+            <th>Username</th>           
             <th>Edit</th>
             <th>Delete</th>
         </tr>
@@ -179,12 +162,9 @@ background-color: #72eb3a;
                
                <td><a href='edit.php?id=$user[userid]'>Edit</a></td>
                <td><a href='delete.php?id=$user[userid]'>Delete</a></td>
-
            </tr>
            ";
         }
-        
-        
         ?>
     </table>
 </body>
